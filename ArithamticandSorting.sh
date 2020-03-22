@@ -28,3 +28,24 @@ arr[0]=${dict[total1]}
 arr[1]=${dict[total2]}
 arr[2]=${dict[total3]}
 arr[3]=${dict[total4]}
+
+#Usecase 8
+for ((i=0 ; i<4 ; i++))
+do
+
+        for ((j=0 ; j<4-i-1 ; j++))
+        do
+                if ((${arr[j]} < ${arr[$((j+1))]} ))
+                then
+                        temp=${arr[j]}
+                        arr[$j]=${arr[$((j+1))]}
+                        arr[$((j+1))]=$temp
+                fi
+        done
+done
+
+echo "Decending Array:"
+for ((i=0; i<4; i++))
+do
+        echo ${arr[i]}
+done
