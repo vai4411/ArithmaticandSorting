@@ -16,3 +16,9 @@ total3=$(($c + $a / $b))
 
 #Usecase 5
 total4=$(($a % $b + $c))
+
+#Usecase 6
+dict[total1]=$total1
+dict[total2]=$total2
+dict[total3]=$total3
+dict[total4]=$total4
