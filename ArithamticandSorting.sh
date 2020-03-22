@@ -22,3 +22,9 @@ dict[total1]=$total1
 dict[total2]=$total2
 dict[total3]=$total3
 dict[total4]=$total4
+
+#Usecase 7
+arr[0]=${dict[total1]}
+arr[1]=${dict[total2]}
+arr[2]=${dict[total3]}
+arr[3]=${dict[total4]}
