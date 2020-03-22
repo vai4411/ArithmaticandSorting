@@ -10,3 +10,7 @@ total1=$(($a + $b * $c))
 
 #Usecase 3
 total2=$(($a * $b + $c))
+
+#Usecase 4
+total3=$(($c + $a / $b))
+
